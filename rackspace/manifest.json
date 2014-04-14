@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Fatspace",
+    "version": "1.0",
+    "description": "Replaces the text 'Rackspace' with 'Fatspace'.",
+    "content_scripts":
+    [
+        {
+            "matches": ["*://*.rackspace.co.uk/*"],
+            "js": ["content_script.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
